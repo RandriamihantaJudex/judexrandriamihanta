@@ -32,7 +32,7 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     if(this.isBrowser()){
-      localStorage.getItem('mode') !== undefined ? this.darkService.themeMode.set(localStorage.getItem('mode')) : this.darkService.themeMode.set('null')
+      localStorage.getItem('mode') !== undefined ? this.darkService.themeMode.set(localStorage.getItem('mode')) : this.darkService.themeMode.set('dark')
     }
   }
   

@@ -2,9 +2,9 @@
    <div #emailRef
       class="mb-1 w-full has-[:focus]:border-2 border-b-2 has-[:focus]:rounded-md border-[#00b89f] flex items-center focus:bg-red-600">
       <fa-icon [icon]="email"
-         class="bg-white w-10 text-lg h-full text-[#a1a1a1] px-2 dark:bg-[#36363615] pt-1"></fa-icon>
+         class="dark:bg-white w-10 text-lg h-full text-[#a1a1a1] px-2 bg-[#36363615] pt-1"></fa-icon>
       <input (keyup)="invalidity(emailsRef,userEmail)" formControlName="email"
-         class="bg-white text-[#363636] dark:bg-[#36363615] focus:outline-none rounded-t-sm  w-full py-1"
+         class="dark:bg-white text-[#363636] bg-[#36363615] focus:outline-none rounded-t-sm  w-full py-1"
          placeholder="JohnDoe@gmail.com" type="text" name="mail" id="mail">
    </div>
    @if (userEmail.invalid && (userEmail.dirty || userEmail.touched)) {
@@ -19,9 +19,9 @@
 
    <div #nomRef
       class="mt-4 mb-1 w-full  has-[:focus]:border-2 border-b-2 has-[:focus]:rounded-md border-[#00b89f] flex items-center ">
-      <fa-icon [icon]="nom" class="bg-white w-10 text-lg h-full text-[#a1a1a1] px-2 dark:bg-[#36363615] pt-1"></fa-icon>
+      <fa-icon [icon]="nom" class="dark:bg-white w-10 text-lg h-full text-[#a1a1a1] px-2 bg-[#36363615] pt-1"></fa-icon>
       <input (keyup)="invalidity(nomsRef,userNom)" formControlName="nom"
-         class="bg-white text-[#363636] dark:bg-[#36363615] focus:outline-none rounded-t-sm  w-full py-1"
+         class="dark:bg-white text-[#363636] bg-[#36363615] focus:outline-none rounded-t-sm  w-full py-1"
          placeholder="john doe" type="text" name="mail" id="mail">
    </div>
    @if (userNom.invalid && (userNom.dirty || userNom.touched)) {
@@ -36,9 +36,9 @@
    <div #messageRef
       class="mt-4 mb-1 w-full  has-[:focus]:border-2 border-b-2 has-[:focus]:rounded-md border-[#00b89f] flex items-center ">
       <fa-icon [icon]="messageIcon"
-         class="bg-white w-10 text-lg h-full text-[#a1a1a1] px-2 dark:bg-[#36363615] pt-1"></fa-icon>
+         class="dark:bg-white w-10 text-lg h-full text-[#a1a1a1] px-2 bg-[#36363615] pt-1"></fa-icon>
       <input (keyup)="invalidity(messagesRef,userMessage)" formControlName="message"
-         class="bg-white text-[#363636] dark:bg-[#36363615] focus:outline-none rounded-t-sm  w-full py-1"
+         class="dark:bg-white text-[#363636] bg-[#36363615] focus:outline-none rounded-t-sm  w-full py-1"
          placeholder="Hello" type="text" name="mail" id="mail">
    </div>
    @if (userMessage.invalid && (userMessage.dirty || userMessage.touched)) {

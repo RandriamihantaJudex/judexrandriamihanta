@@ -4,7 +4,7 @@ import { Injectable, signal } from '@angular/core';
   providedIn: 'root'
 })
 export class ThemeModeService  {
-  themeMode = signal<string | null>('dark')
+  themeMode = signal<string | null>('null')
 
   constructor(){
     if(this.isBrowser()){
@@ -26,7 +26,7 @@ export class ThemeModeService  {
   }
 
   changeThemeToggle() {
-    this.themeMode.update((value => (value === 'null' ? 'dark' : 'null')))
+    this.themeMode.update( (value => (value === 'null' ? 'dark' : 'null') ) )
   }
 
 }

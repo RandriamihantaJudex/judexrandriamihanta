@@ -27,14 +27,14 @@
     <div class="h-[60vh] w-full inline-flex  flex-col justify-center md:items-center mt-[25vh] mb-[10vh]">
         <div class=" flex  items-start">
             <div class="lg:w-1/2 flex flex-col items-start mt">
-                <h2 #nom class="font-mont text-4xl md:text-6xl max-md:-mt-[100px] z-10 dark:text-[#00b89f] text-white">Randriamihanta</h2>
-                <h2 class="font-mont text-4xl md:text-6xl z-10 dark:text-[#00b89f] text-white">Judex</h2>
-                <div #lineOne class="lineOne dark:bg-[#00b89f] bg-white h-[1.5px] md:h-1 mt-2"></div>
-                <div #lineTwo class="lineTwo dark:bg-[#00b89f] bg-white h-[1.5px] md:h-1 mt-3"></div>
-                <h3 class="font-mont mt-5 z-10 text-xl  md:text-2xl text-white dark:text-[#363636] "><span
+                <h2 #nom class="font-mont text-4xl md:text-6xl max-md:-mt-[100px] z-10 text-[#00b89f] dark:text-white">Randriamihanta</h2>
+                <h2 class="font-mont text-4xl md:text-6xl z-10 text-[#00b89f] dark:text-white">Judex</h2>
+                <div #lineOne class="lineOne bg-[#00b89f] dark:bg-white h-[1.5px] md:h-1 mt-2"></div>
+                <div #lineTwo class="lineTwo bg-[#00b89f] dark:bg-white h-[1.5px] md:h-1 mt-3"></div>
+                <h3 class="font-mont mt-5 z-10 text-xl  md:text-2xl dark:text-white text-[#363636] "><span
                         class="font-bold text-2xl text-[#00b89f] ">Frontend</span> developer
                 </h3>
-                <p class="font-raboto mt-2 text-xs md:text-sm text-justify z-10 text-white dark:text-[#363636] ">
+                <p class="font-raboto mt-2 text-xs md:text-sm text-justify z-10 dark:text-white text-[#363636] ">
                     Hello,
                     I am a web <span class="font-extrabold text-[#00b89f]">developer</span> seeking my first job, determined to
                     succeed in this field. To achieve this,
@@ -63,7 +63,7 @@
 
     <!-- PROJET -->
     <div #projetSection class="w-full md:w-1/2 md:ml-[50%]">
-        <h2 class="w-full font-mont dark:bg-white bg-[#363636] text-white  dark:text-[#00b89f] text-3xl mb-6">Project
+        <h2 class="w-full font-mont bg-white dark:bg-[#363636] dark:text-white  text-[#00b89f] text-3xl mb-6">Project
         </h2>
         @for (item of favorite(); track $index) {
             <app-project [project]="item"></app-project>
@@ -75,7 +75,7 @@
     </div>
 
     <!-- SKILLS -->
-    <div #skillsSection class="md:w-1/2 md:ml-[50%] w-full font-mont dark:bg-white bg-[#363636] text-white  dark:text-[#00b89f] text-3xl mt-16">
+    <div #skillsSection class="md:w-1/2 md:ml-[50%] w-full font-mont bg-white dark:bg-[#363636] dark:text-white  text-[#00b89f] text-3xl mt-16">
         <h2 class="mb-2">Skills and Tools</h2>
         <app-skills [skills]="skillsIconService.langages" titre="Frontend"></app-skills>
         <app-skills [skills]="skillsIconService.styles" titre="Style and Design"></app-skills>
@@ -83,7 +83,7 @@
     </div>
 
     <!-- ABOUT ME -->
-    <div #aboutSection class=" md:w-1/2 md:ml-[50%] w-full mt-16 mb-6 max-sm:hidden ">
+    <div #aboutSection class=" md:w-1/2 md:ml-[50%] w-full mt-16 mb-6 max-sm:hidden text-[#363636] font-raboto dark:text-white">
         <h2 class="font-mont text-[#00b89f] text-3xl mb-3">About me</h2>
         <p class="text-justify mb-2">Hello, I am <span class="font-mont">Randriamihanta Judex</span>,
             someone who has found happiness in coding and has been passionate about everything related to this field
@@ -106,7 +106,7 @@
                 class="font-mont">determined</span>.</p>
     </div>
 
-    <div class="w-full mt-16 mb-6 font-raboto md:hidden">
+    <div class="w-full mt-16 mb-6 font-raboto md:hidden text-[#363636] dark:text-white">
         <h2 class="font-mont text-[#00b89f] text-3xl mb-3">About me</h2>
         <p class="text-justify mb-2">Hello, I am <span class="font-mont">Randriamihanta Judex</span>, passionate about coding and everything related to
             it. I enjoy <span class="font-mont">creating</span> solutions that are useful to others, particularly in areas that I care about, like
