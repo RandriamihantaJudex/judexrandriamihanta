@@ -46,31 +46,20 @@ export class ProjectsService {
           '../../assets/images/portfolio/portfolio6.png',
           '../../assets/images/portfolio/portfolio7.png'
         ],
-        technology: [{nom:'Angular',image:'../../assets/images/angular.svg'},{nom:'Tailwind Css',image:'../../assets/images/tailwind.svg'},{nom:'Splidejs',image:'../../assets/images/splide.svg'}],
+        technology: [{nom:'Angular',image:'../../assets/images/angular.svg'},{nom:'Tailwind Css',image:'../../assets/images/tailwind.svg'},{nom:'Splidejs',image:'../../assets/images/splide.svg'},{nom:'Lottiefiles',image:'../../assets/images/lottiefiles.svg'}],
         anectodes: 'Aucune Actuellement',
         favorite: true
       },
       {
-        title: 'Portfolio',
-        image: 'dfdf',
-        link: { github: '', web: '' },
-        description: '',
-        objectives: [''],
+        title: 'PORTFOLIO UI',
+        image: '../../../src/assets/images/UI/figmaDesign.PNG',
+        link: { github: '', web: 'https://www.behance.net/gallery/210134013/design-ui-portfolio' },
+        description: "The UI side of my portfolio designed on Figma, which includes the wireframes, the design system, and all the pages that I personally designed.",
+        objectives: ['Bring a unique identity to my portfolio.','Prove my design skills.'],
         images: [''],
-        technology: [{nom:'React',image:'../../assets/images/react.svg'}],
+        technology: [{nom:'Figma',image:'../../assets/images/truefigma.png'}],
         anectodes: 'string',
         favorite: true
-      },
-      {
-        title: 'last',
-        image: 'dfdf',
-        link: { github: '', web: '' },
-        description: '',
-        objectives: [''],
-        images: [''],
-        technology: [{nom:'',image:''}],
-        anectodes: 'string',
-        favorite: false
       }
     ]
   }
