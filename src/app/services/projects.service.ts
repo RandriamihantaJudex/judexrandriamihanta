@@ -15,7 +15,7 @@ export class ProjectsService {
         title: 'Padawan',
         image: '../../assets/images/padawan.png',
         link: { github: 'https://github.com/RandriamihantaJudex/PADAWAN_PROJECT.git', web: 'http://padawan-12.web.app/' },
-        description: 'Padawan is a web platform that facilitates connections between students and professionals in their field, with the goal of creating mentorship opportunities. Professionals provide advice, support, and guidance to help students advance in their academic and professional journeys.',
+        description: 'Padawan is a web platform that connects students with professionals to create mentorship opportunities, where professionals offer advice and guidance to help students progress in their academic and professional paths.',
         objectives: [
           "Facilitate students' integration into the professional world.",
           "Help students learn best practices in the workplace.",
@@ -52,11 +52,11 @@ export class ProjectsService {
       },
       {
         title: 'PORTFOLIO UI',
-        image: '../../../src/assets/images/UI/figmaDesign.PNG',
+        image: '../../assets/images/UI/figma.PNG',
         link: { github: '', web: 'https://www.behance.net/gallery/210134013/design-ui-portfolio' },
         description: "The UI side of my portfolio designed on Figma, which includes the wireframes, the design system, and all the pages that I personally designed.",
         objectives: ['Bring a unique identity to my portfolio.','Prove my design skills.'],
-        images: [''],
+        images: ['../../assets/images/UI/figma.PNG'],
         technology: [{nom:'Figma',image:'../../assets/images/truefigma.png'}],
         anectodes: 'string',
         favorite: true
