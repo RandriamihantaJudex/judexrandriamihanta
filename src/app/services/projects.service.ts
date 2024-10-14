@@ -12,7 +12,7 @@ export class ProjectsService {
   getAllProject(): Project[] {
     return [
       {
-        title: 'Padawan',
+        title: 'PADAWAN',
         image: '../../assets/images/padawan.png',
         link: { github: 'https://github.com/RandriamihantaJudex/PADAWAN_PROJECT.git', web: 'https://padawan-two.vercel.app/' },
         description: 'Padawan is a web platform that connects students with professionals to create mentorship opportunities, where professionals offer advice and guidance to help students progress in their academic and professional paths.',
@@ -33,7 +33,18 @@ export class ProjectsService {
         favorite: true
       },
       {
-        title: 'My Portfolio',
+        title: 'BATMAN SHOP',
+        image: '../../assets/images/BATMAN/batman1.PNG',
+        link: { github: 'https://github.com/RandriamihantaJudex/SAYNA-REACTJS-BATMANREACT', web: 'https://batmanshop.vercel.app/' },
+        description: "The front-end development of an e-commerce website focused on the DC universe, specifically Batman, created during my training at Sayna.",
+        objectives: ['Master React JS in depth','Practice with the routing system in React.'],
+        images: ['../../assets/images/BATMAN/batman2.PNG','../../assets/images/BATMAN/batman3.PNG','../../assets/images/BATMAN/batman4.PNG','../../assets/images/BATMAN/batman5.PNG',],
+        technology: [{nom:'React',image:'../../assets/images/react.svg'}],
+        anectodes: 'Aucune Actuellement',
+        favorite: true
+      },
+      {
+        title: 'MY PORTFOLIO',
         image: '../../assets/images/portfolio/portfolio1.png',
         link: { github: 'https://github.com/RandriamihantaJudex/PORTFOLIO.git', web:'https://judexrandriamihanta.vercel.app/' },
         description: 'This site is my personal platform where I showcase all my work and provide some information about myself. I also welcome anyone interested in contacting me.',
@@ -50,6 +61,8 @@ export class ProjectsService {
         anectodes: 'Aucune Actuellement',
         favorite: true
       },
+      
+      
       {
         title: 'PORTFOLIO UI',
         image: '../../assets/images/UI/figma.PNG',
@@ -59,7 +72,7 @@ export class ProjectsService {
         images: ['../../assets/images/UI/figma.PNG'],
         technology: [{nom:'Figma',image:'../../assets/images/truefigma.png'}],
         anectodes: 'Aucune Actuellement',
-        favorite: true
+        favorite: false
       }
     ]
   }
