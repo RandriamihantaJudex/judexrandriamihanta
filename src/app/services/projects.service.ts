@@ -14,7 +14,7 @@ export class ProjectsService {
       {
         title: 'Padawan',
         image: '../../assets/images/padawan.png',
-        link: { github: 'https://github.com/RandriamihantaJudex/PADAWAN_PROJECT.git', web: 'http://padawan-12.web.app/' },
+        link: { github: 'https://github.com/RandriamihantaJudex/PADAWAN_PROJECT.git', web: 'https://padawan-two.vercel.app/' },
         description: 'Padawan is a web platform that connects students with professionals to create mentorship opportunities, where professionals offer advice and guidance to help students progress in their academic and professional paths.',
         objectives: [
           "Facilitate students' integration into the professional world.",
@@ -35,7 +35,7 @@ export class ProjectsService {
       {
         title: 'My Portfolio',
         image: '../../assets/images/portfolio/portfolio1.png',
-        link: { github: 'https://github.com/RandriamihantaJudex/PORTFOLIO.git', web: '' },
+        link: { github: 'https://github.com/RandriamihantaJudex/PORTFOLIO.git', web:'https://judexrandriamihanta.vercel.app/' },
         description: 'This site is my personal platform where I showcase all my work and provide some information about myself. I also welcome anyone interested in contacting me.',
         objectives: ['Showcase the projects I have completed.','Establish an online presence.','Centralize information about myself that may be useful to others.','Facilitate collaboration opportunities.'],
         images: ['../../assets/images/portfolio/portfolio1.png',
@@ -58,7 +58,7 @@ export class ProjectsService {
         objectives: ['Bring a unique identity to my portfolio.','Prove my design skills.'],
         images: ['../../assets/images/UI/figma.PNG'],
         technology: [{nom:'Figma',image:'../../assets/images/truefigma.png'}],
-        anectodes: 'string',
+        anectodes: 'Aucune Actuellement',
         favorite: true
       }
     ]
