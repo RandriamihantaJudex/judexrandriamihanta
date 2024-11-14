@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: 'futura';
+    src: url("./assets/fonts/futura.otf");
+}
+@font-face {
+    font-family: 'raboto';
+    src: url("./assets/fonts/raboto.ttf");
+}
+@font-face {
+    font-family: 'mont';
+    src: url("./assets/fonts/mont.otf");
+}
+body{
+    padding: 0 0;
+}
+

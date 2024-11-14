@@ -1,0 +1,10 @@
+<div class="w-full" [ngClass]="darkService.themeMode()">
+
+    <app-navbar></app-navbar>
+    <app-loading></app-loading>
+    <div class="dark:bg-[#363636]  w-full h-auto bg-white px-[10%] -z-50">
+        <router-outlet></router-outlet>
+    </div>
+    <app-footer></app-footer>
+    
+</div>

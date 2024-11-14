@@ -1,0 +1,130 @@
+
+<div #navigation class="h-full fixed w-1/3  max-md:hidden hidden flex-col items-center justify-center">
+    <div #LeParent class="flex flex-col">
+        <div class="flex items-center gap-2 text-[#363636]">
+            <div class="pinoccio h-1 w-6 bg-[#363636]"></div>
+            <h1 #texta class="text-2xl font-mont ">Project</h1>
+        </div>
+        <div class="flex items-center gap-2 text-[#363636]">
+            <div class="h-1 w-6 bg-[#363636]"></div>
+            <h1 class="text-2xl font-mont ">Skills and Tools</h1>
+        </div>
+        <div class="flex items-center gap-2 text-[#363636]">
+            <div class="h-1 w-6 bg-[#363636]"></div>
+            <h1 class="text-2xl font-mont ">About me</h1>
+        </div>
+        <div class="flex items-center gap-2 text-[#363636]">
+            <div class="h-1 w-6 bg-[#363636]"></div>
+            <h1 class="text-2xl font-mont">Contact</h1>
+        </div>
+    </div>
+</div>
+
+
+
+<div class=" text-white dark:text-[hsl(0,0%,21%)]">
+    <!-- PRESENTATION -->
+    <div class="h-[60vh] w-full inline-flex  flex-col justify-center md:items-center mt-[25vh] mb-[10vh]">
+        <div class=" flex  items-start">
+            <div class="lg:w-1/2 flex flex-col items-start mt">
+                <h2  class="font-mont text-4xl md:text-6xl max-md:-mt-[100px] z-10 text-[#00b89f] dark:text-white">Randriamihanta</h2>
+                <h2 class="font-mont text-4xl md:text-6xl z-10 text-[#00b89f] dark:text-white">Judex</h2>
+
+                <div class="lineOne bg-[#00b89f] dark:bg-white h-[1.5px] md:h-1 mt-2"></div>
+                <div class="lineTwo bg-[#00b89f] dark:bg-white h-[1.5px] md:h-1 mt-3"></div>
+                
+                <h3 class="font-mont mt-5 z-10 text-xl  md:text-2xl dark:text-white text-[#363636] "><span
+                        class="font-bold text-2xl text-[#00b89f] ">Frontend</span> developer
+                </h3>
+                <p class="font-raboto mt-2 text-xs md:text-sm text-justify z-10 dark:text-white text-[#363636] ">
+                    Hello,
+                    I am a web <span class="font-extrabold text-[#00b89f]">developer</span> seeking my first job, determined to
+                    succeed in this field. To achieve this,
+                    I am ready to take on any <span class="font-extrabold text-[#00b89f]">challenges</span>, regardless of their
+                    complexity. Feel free to contact me for
+                    any <span class="font-extrabold text-[#00b89f]">collaboration</span> or <span
+                        class="font-extrabold text-[#00b89f]">opportunities</span> related to software development.
+                </p>
+        
+                <button
+                    routerLink="../contact" class="bg-[#00b89f] font-mont dark:text-white mt-10 text-white rounded-lg px-4 py-1 md:px-6 md:py-2 z-10 text-xl">Contact</button>
+        
+            </div>
+            <div class="max-lg:hidden  w-1/2 h-[50%] pl-10 flex justify-end ">
+                <app-tities></app-tities>
+            </div>  
+        
+        </div>
+        
+
+    </div>
+
+    <div>
+        <app-cookies></app-cookies>
+    </div>
+
+    <!-- PROJET -->
+    <div #projetSection class="w-full md:w-1/2 md:ml-[50%]">
+        <h2 class="w-full font-mont bg-white dark:bg-[#363636] dark:text-white  text-[#00b89f] text-3xl mb-6">Project
+        </h2>
+        @for (item of favorite(); track $index) {
+            <app-project [project]="item"></app-project>
+        }
+        
+        <button routerLink="/projects"
+            class="font-mont text-[#363636] dark:text-white hover:text-white hover:bg-[#363636] p-2 pl-0 hover:pl-2 rounded-md hover:dark:text-[#363636] hover:dark:bg-white mt-2">View
+            more projects <fa-icon [icon]="arrow" class=" ml-1"></fa-icon></button>
+    </div>
+
+    <!-- SKILLS -->
+    <div #skillsSection class="md:w-1/2 md:ml-[50%] w-full font-mont bg-white dark:bg-[#363636] dark:text-white  text-[#00b89f] text-3xl mt-16">
+        <h2 class="mb-2">Skills and Tools</h2>
+        <app-skills [skills]="skillsIconService.langages" titre="Frontend"></app-skills>
+        <app-skills [skills]="skillsIconService.styles" titre="Style and Design"></app-skills>
+        <app-skills [skills]="skillsIconService.tools" titre="Tools"></app-skills>
+    </div>
+
+    <!-- ABOUT ME -->
+    <div #aboutSection class=" md:w-1/2 md:ml-[50%] w-full mt-16 mb-6 max-sm:hidden text-[#363636] font-raboto dark:text-white">
+        <h2 class="font-mont text-[#00b89f] text-3xl mb-3">About me</h2>
+        <p class="text-justify mb-2">Hello, I am <span class="font-mont">Randriamihanta Judex</span>,
+            someone who has found happiness in coding and has been passionate about everything related to this field
+            ever since.
+            What I appreciate most about development is the ability to <span class="font-mont">create</span> things that
+            will be useful to others and to meet needs in areas that are close to my heart,
+            such as computer science, video games, and animation.
+        </p>
+        <p class="text-justify mb-2">
+            I am someone who loves to <span class="font-mont">learn</span> new things, learn from others, and then <span
+                class="font-mont">share</span> my knowledge.
+            I believe that proper training is one of the most important things to do before truly entering the
+            professional world,
+            which is why I have made it my priority. To achieve this, I seize every opportunity that comes my way,
+            particularly by taking courses with well-known organizations like <span class="font-mont">Orange Digital
+                Center</span> , <span class="font-mont">Sayna</span>, or <span class="font-mont">Coursera</span>.
+        </p>
+        <p class="text-justify mb-2">The three adjectives that best describe me, in my opinion, are <span
+                class="font-mont">curious</span>, <span class="font-mont">passionate</span>, and <span
+                class="font-mont">determined</span>.</p>
+    </div>
+
+    <div class="w-full mt-16 mb-6 font-raboto md:hidden text-[#363636] dark:text-white">
+        <h2 class="font-mont text-[#00b89f] text-3xl mb-3">About me</h2>
+        <p class="text-justify mb-2">Hello, I am <span class="font-mont">Randriamihanta Judex</span>, passionate about coding and everything related to
+            it. I enjoy <span class="font-mont">creating</span> solutions that are useful to others, particularly in areas that I care about, like
+            computer science, video games, and animation.</p>
+        <p class="text-justify mb-2">I am passionate about <span class="font-mont">learning</span>, sharing knowledge, and believe that proper training
+            is essential before entering the professional world. I prioritize my growth by seizing every <span class="font-mont">opportunity</span>,
+            including courses with organizations like <span class="font-mont">Orange Digital Center</span>, <span class="font-mont">Sayna</span>, and <span class="font-mont">Coursera</span>.</p>
+        <p class="text-justify mb-2">The three adjectives that best describe me, in my opinion, are <span
+                class="font-mont">curious</span>, <span class="font-mont">passionate</span>, and <span
+                class="font-mont">determined</span>.</p>
+    </div>
+
+    <div class="w-full mt-16 pb-12 md:w-1/2 md:ml-[50%]">
+        <h2 class="font-mont text-[#00b89f] text-3xl mb-3">Contact</h2> 
+        <app-contact-form></app-contact-form>     
+    </div>
+
+
+</div>

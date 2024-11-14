@@ -1,0 +1,38 @@
+@if (project) {
+<div class="dark:bg-white bg-[#363636] rounded-md  text-white dark:text-[#363636] p-4 mt-4">
+
+    <!-- Nom du Projet -->
+    <h3 class="font-mont text-2xl">{{project.title}}</h3>
+    <!-- Description -->
+    <p class="font-raboto text-sm w-full text-justify">{{project.description}}</p>
+    <p class="font-raboto text-xs mt-2 mb-2 font-bold">Made with</p>
+
+    <!-- Techno -->
+    <div class="flex flex-wrap items-center gap-3">
+        @for (tech of project.technology; track $index) {
+        <div class="flex items-center gap-2">
+            <p>-</p>
+            <img [src]="tech.image" alt="react icon" class="h-8 w-8">
+            <p>{{tech.nom}}</p>
+        </div>
+
+        }
+
+    </div>
+    <!-- call to action -->
+    <div class="flex items-center w-full mt-4 justify-between">
+        <button (click)="redirect(project.title)"
+            class="bg-[#00b89f] text-white rounded-md w-8/12 font-mont py-1 hover:bg-white hover:text-[#363636] hover:dark:bg-[#363636] hover:dark:text-white">See
+            more</button>
+        <a [href]="project.link.github">
+            <fa-icon (click)="redirect(project.link.github)" [icon]="github" class="text-xl"></fa-icon>
+        </a>
+        <a [href]="project.link.web">
+            <fa-icon (click)="redirect(project.link.web)" [icon]="globe" class="text-xl"></fa-icon>
+        </a>
+
+    </div>
+
+
+</div>
+}
