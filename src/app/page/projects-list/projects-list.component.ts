@@ -36,24 +36,26 @@ export class ProjectsListComponent {
   //gere l'affichage des projets (front/back/autres) 
   seeOtherProject(element: ElementRef,activeSection:string) {
     let enfant:HTMLDivElement[]=this.projectnav.nativeElement.children;
+    const activeClassList : string[] = ["border-[#00b89f]","text-[#00b89f]"]; 
+    const nonActiveClassList : string[] = ["border-[#36363615]","dark:border-[#c5c5c59d]","text-[#36363615]", "dark:text-[#c5c5c59d]"];
 
     Array.from(enfant).forEach((child: HTMLDivElement) => {
-      this.removeThoseClasses(child,["border-[#00b89f]","text-[#00b89f]"])
-      this.addThoseClasses(child,["border-[#36363615]","dark:border-[#c5c5c59d]","text-[#36363615]", "dark:text-[#c5c5c59d]"])
+      this.removeThoseClasses(child,activeClassList)
+      this.addThoseClasses(child,nonActiveClassList)
     });
 
-    this.removeThoseClasses(element,["border-[#36363615]","dark:border-[#c5c5c59d]","text-[#36363615]", "dark:text-[#c5c5c59d]"])
-    this.addThoseClasses(element,["border-[#00b89f]","text-[#00b89f]"])
+    this.removeThoseClasses(element,nonActiveClassList)
+    this.addThoseClasses(element,activeClassList)
     this.activeProjectSection.set(activeSection)
   }
 
-  removeThoseClasses(div:HTMLDivElement | ElementRef,listToRemove:string[]){
+  removeThoseClasses(div:HTMLDivElement | ElementRef,listToRemove:string[]):void{
     Array.from(listToRemove).forEach(element=>{
       div instanceof HTMLDivElement?div.classList.remove(element):div.nativeElement.classList.remove(element);
     })
   }
 
-  addThoseClasses(div:HTMLDivElement | ElementRef,listToAdd:string[]){
+  addThoseClasses(div:HTMLDivElement | ElementRef,listToAdd:string[]):void{
     Array.from(listToAdd).forEach(element=>{
       div instanceof HTMLDivElement?div.classList.add(element):div.nativeElement.classList.add(element);
     })
